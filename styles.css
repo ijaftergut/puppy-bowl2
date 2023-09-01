@@ -1,0 +1,55 @@
+body{
+    font-family: verdana;
+    background-color: antiquewhite;
+}
+nav{
+    background-color: tan;
+    padding: 2rem;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav a {
+    color: black;
+    text-align: center;;
+    align-items: center;
+    margin: 1rem;
+    height: 120px;
+    width: 120px;
+    justify-content:center;
+    border: solid 1px darkslategray;
+}
+
+.box {
+    border: solid 3px black;
+    text-align: center;
+    background-color: bisque;
+}
+.extra{
+    border: solid 3px black;
+    text-align: center;
+    height: 20px;
+    width: 180px;
+}
+.img{
+    width: 480px;
+    height: 720px;
+}
+@media(max-width: 600px){
+    .img{
+        width: 120px;
+        height: 180px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+a:hover { 
+  background-color: antiquewhite;
+  transition: all 1s;
+}
+a > div{
+    justify-content:center;
+    align-items: center;
+}
